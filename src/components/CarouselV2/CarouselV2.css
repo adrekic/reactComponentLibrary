@@ -1,0 +1,16 @@
+.carousel-v2-frame {
+  overflow: hidden;
+}
+
+.carousel-v2-items-list {
+  display: flex;
+  flex-direction: row;
+  transition: linear 300ms transform;
+}
+
+.item-cell-container {
+  width: min-content;
+  height: min-content;
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,21 @@
+.toggle-button {
+  width: min-content;
+  height: min-content;
+  margin-left: 500px;
+}
+
+.content-wrapper {
+  width: min-content;
+  height: min-content;
+  /* padding: 20px; */
+  border-radius: 1vw;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;; */
+
+  z-index: 1000;
+  position: absolute;
+  visibility: hidden;
+}
+
+.content-wrapper.visible {
+  visibility: visible;
+}

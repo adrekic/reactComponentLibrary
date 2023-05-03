@@ -1,0 +1,23 @@
+.circle-button{
+  --circle-button-height: 100px;
+  --circle-button-width: 100px;
+
+  width: var(--circle-button-width);
+  height: var(--circle-button-height);
+  background-color: lightgray;
+  border-radius: 100%;
+  border: solid 1px darkgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  /* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
+
+  transition: linear 150ms opacity;
+}
+
+.circle-button:hover{
+  opacity: 80%;
+}

@@ -1,0 +1,56 @@
+.draggable-area{
+  width: 30%;
+  padding: 20px;
+  border: solid red 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.draggable-area.drag-occuring{
+  border-width: 3px;
+}
+
+/* .draggable-item{
+  flex-shrink: 0;
+  width: 100%;
+  cursor: -webkit-grab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.draggable-item.dragging{
+  /* height: 61px; */
+  opacity: 0;
+}
+
+.draggable-item.dragging-over .test-item{
+  border-color: green;
+  opacity: 100;
+}
+
+.test-item{
+  width: 100%;
+  height: 50px;
+  border: solid black 1px;
+  margin-bottom: 10px;
+  background-color: white;
+  transition: linear 150ms border-color;
+  cursor: grabbing;
+}
+
+.test-item.drag-occuring{
+  opacity: 10%;
+}
+
+.test-item.drag-occuring:hover{
+  opacity: 100%;
+}
+
+.test-item.dragging{
+  border-color: red;
+  height: 30px;
+  width: 80%;
+  opacity: 100%;
+}

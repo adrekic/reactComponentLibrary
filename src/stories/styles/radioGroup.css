@@ -1,0 +1,28 @@
+.radio-option-example1 {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  /* border: solid 2px skyblue; */
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 1vw;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.radio-option-example1 .title{
+  font-size: large;
+}
+
+.radio-option-example1.selected{
+  outline: skyblue 2px solid;
+  background-color: skyblue;
+  color: white;
+}
+
+.radio-option-example1:hover:not(.selected){
+  outline: skyblue 2px solid;
+}

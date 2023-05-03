@@ -1,0 +1,13 @@
+.scrollable-container {
+  overflow-y: scroll;
+  height: 600px;
+  width: 100%;
+  /* border: solid 1px red; */
+  /* margin: 20px; */
+  user-select: none;
+  overflow-x: hidden;
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}

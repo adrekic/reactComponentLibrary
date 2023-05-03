@@ -1,0 +1,35 @@
+.tiled-accordian-wrapper {
+  width: 100px;
+  height: 100px;
+  border: solid 1px black;
+}
+
+.tiled-accordian-items {
+  position: absolute;
+}
+
+@keyframes item-render {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.tiled-accordian-items .item {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  border: solid 1px black;
+  animation: linear 200ms item-render;
+}
+
+.tiled-accordian-items.closing .item{
+  animation-duration: 200ms !important;
+  animation-direction: reverse !important;
+  animation-name: item-render !important;
+  animation-timing-function: linear !important;
+}
+
+

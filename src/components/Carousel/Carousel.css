@@ -1,0 +1,7 @@
+.carousel-wrapper{
+  display: flex;
+}
+
+.carousel-wrapper .frame-wrapper{
+  display: flex;
+}

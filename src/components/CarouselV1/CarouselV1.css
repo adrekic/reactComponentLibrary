@@ -1,0 +1,17 @@
+.carousel-wrapper {
+  width: min-content;
+  position: relative;
+}
+
+.carousel-wrapper .carousel-side-bar {
+  position: absolute;
+  background-color: red;
+  height: 100%;
+  visibility: hidden;
+  background-color: rgba(211, 211, 211, 0.378);
+  opacity: 50%;
+}
+
+.carousel-wrapper:hover .carousel-side-bar {
+  visibility: visible;
+}

@@ -1,0 +1,11 @@
+.grid-wrapper{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-auto-rows: 1fr;
+}
+
+.grid-item{
+  width: 100%;
+  height: 100%;
+}

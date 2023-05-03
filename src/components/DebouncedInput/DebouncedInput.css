@@ -1,0 +1,28 @@
+.input-wrapper {
+  height: auto;
+}
+
+.input-wrapper .input-label {
+  padding-bottom: 3px;
+}
+
+.input-wrapper .input-label > label {
+  font-family: arial;
+}
+
+.input-wrapper .input-field {
+  --input-height: 25px;
+  --bor-a-w: 1px;
+  --pad-h-w: 5px;
+  width: calc(100% - calc(2 * var(--bor-a-w)) - calc(2 * var(--pad-h-w)));
+  height: var(--input-height);
+  padding: 0px var(--pad-h-w);
+  border: solid var(--bor-a-w) lightgray;
+  border-radius: calc(var(--input-height) / 8);
+  transition: linear 150ms border-color;
+}
+
+.input-wrapper .input-field:focus {
+  outline: none;
+  border-color: red;
+}
