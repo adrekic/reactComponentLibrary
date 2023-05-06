@@ -1,0 +1,7 @@
+.reorder-list-item:focus {
+  outline: none;
+}
+
+.reorder-list-item {
+  position: relative;
+}

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { v4 as uuid } from "uuid";
 import { ReorderList, ReorderListItem } from "../components/ReorderList";
-import "./styles/radioGroup.css";
+import "./styles/reorderList.css";
 import classNames from "classnames";
+import { reorder } from "../components/DragDropList/DragDropProvider";
 export default {
   title: "Example/ReorderList",
   component: <ReorderList />,
@@ -19,17 +20,30 @@ const Template = (args) => {
     { title: "Item4", id: uuid(), description: "Ipsum huji lik opa." },
     { title: "Item5", id: uuid(), description: "Bajm upas tusi qut." },
   ]);
+
+  const handleReorder = (result) => {
+    setItems(reorder(items, result.sourceIndex, result.targetIndex));
+  };
+
   return (
-    <div
-      style={{
-        width: "400px",
-        height: "min-content",
-        marginLeft: "20px",
-        // border: "solid black 1px",
-        // padding: "10px",
-        marginTop: "20px",
-      }}
-    ></div>
+    <div className="reorder-list-example1-container">
+      <ReorderList numItems={items.length} onReorder={handleReorder}>
+        {items.map((item, index) => (
+          <ReorderListItem item={item} index={index} key={item.id}>
+            {(isSelected) => (
+              <div
+                className={classNames({
+                  "reorder-list-item-example1": true,
+                  selected: isSelected,
+                })}
+              >
+                {item.title}
+              </div>
+            )}
+          </ReorderListItem>
+        ))}
+      </ReorderList>
+    </div>
   );
 };
 

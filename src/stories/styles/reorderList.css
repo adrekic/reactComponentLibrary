@@ -1,0 +1,14 @@
+.reorder-list-example1-container {
+  height: min-content;
+  width: min-content;
+}
+
+.reorder-list-item-example1 {
+  width: 500px;
+  height: 100px;
+  border: solid 1px black;
+}
+
+.reorder-list-item-example1.selected {
+  border-color: red;
+}
