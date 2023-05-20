@@ -1,0 +1,17 @@
+.draggable-item-v3-wrapper {
+  width: min-content;
+  height: min-content;
+  min-height: min-content;
+  margin-bottom: 10px;
+  user-select: none;
+  -webkit-transform:translate3d(0,0,0);
+
+}
+
+.draggable-item-v3-wrapper.ghost {
+  position: absolute;
+  /* pointer-events: none; */
+  /* background-color: brown; */
+  width: min-content;
+  height: min-content;
+}
