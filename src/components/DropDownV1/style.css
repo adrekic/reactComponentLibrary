@@ -1,0 +1,14 @@
+
+
+.drop-down-v1-list-wrapper{
+  height: 0;
+  overflow: hidden;
+}
+
+.drop-down-v1-list{
+  border: solid red 1px;
+}
+
+.drop-down-v1-option{
+  height: min-content;
+}
